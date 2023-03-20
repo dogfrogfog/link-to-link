@@ -16,7 +16,7 @@ const InfoBlock = ({ title, text }: { title: string, text: string }) => (
   </div>
 )
 
-const QuestionsBlock = ({ question, answer} : { question: string, answer: string }) => {
+const QuestionsBlock = ({ question, answer } : { question: string, answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
   <div className="shadow-lg rounded p-2 mb-4">
@@ -69,7 +69,7 @@ const questions = [
 export default function Home() {
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
+    <h1 className="text-3xl font-bold">
       {landingBlocks.map(v => <InfoBlock key={v.title} title={v.title} text={v.text} />)}
     </h1>
       <div className="px-4">
