@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className='w-96 h-screen mx-auto p-12 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-500'>
         <Header />
-        <div className='w-full min-h-full bg-white p-2'>
+        <div className='w-full min-h-full bg-white'>
           {children}
         </div>
       </body>
