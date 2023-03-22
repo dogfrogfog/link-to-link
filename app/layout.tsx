@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='w-full h-screen mx-auto p-12 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-500'>
+      <body className='body h-screen mx-auto bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200'>
         <Header />
-        <div className='w-full'>
+        <div className='w-full min-h-full bg-white'>
           {children}
         </div>
       </body>
