@@ -14,7 +14,7 @@ export default function Profile() {
       <div className='my-4'>
 
         {fields.map(v => (
-          <div className='w-full bg-red-200 my-4 p-2 rounded-lg'>
+          <div key={v.link} className='w-full bg-red-200 my-4 p-2 rounded-lg'>
             <div className="flex justify-between">
               <div>
                 <p className='font-bold'>{v.title}</p>
