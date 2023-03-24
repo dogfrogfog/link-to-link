@@ -1,8 +1,8 @@
 {
-    "build": {
-      "env": {
-        "NODE_ENV": "production"
-      },
-      "command": "pnpm run build-turbo && npx next export"
-    }
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "command": "npm run build && npx next export"
   }
+}
