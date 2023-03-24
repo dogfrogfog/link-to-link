@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "turbo tun build",
+    "start": "turbo tun start",
+    "lint": "turbo tun lint"
   },
   "dependencies": {
     "@tremor/react": "^2.0.2",
