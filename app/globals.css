@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .body {
-    max-width: min(480px, 100%);
+  max-width: min(480px, 100%);
 }
