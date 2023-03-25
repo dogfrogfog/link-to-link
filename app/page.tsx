@@ -48,8 +48,6 @@ const landingBlocks = [
   },
 ];
 
-console.log('triger build');
-
 export default function Home() {
   return (
     <>
