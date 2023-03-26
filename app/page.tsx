@@ -42,7 +42,7 @@ const landingBlocks = [
   },
   {
     title: 'Analyze your audience and keep your followers engaged.',
-    text: 'Track your engagementwd triger buildover time, monitor revenue and learn what’s converting your audience. Make informed updates on the fly to keep them coming back.',
+    text: 'Track your engagementwd triger buildover buildover time, monitor revenue and learn what’s converting your audience. Make informed updates on the fly to keep them coming back.',
     bgColor: 'bg-slate-100',
     textColor: 'text-slate-900',
   },
