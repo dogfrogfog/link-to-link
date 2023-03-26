@@ -16,5 +16,6 @@ export const authOptions = {
     }),
   ],
   adapter: PrismaAdapter(db),
+  debug: true,
 };
 export default NextAuth(authOptions);
