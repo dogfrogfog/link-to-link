@@ -9,7 +9,7 @@ export default async function ProfileLayout({
 }) {
   const data = await getServerSession(authOptions);
   return (
-    <div className="p-4 bg-slate-100">
+    <div className="p-4 bg-gray-300">
       <div className="text-center lg:text-left">
         <h1 className="my-4 text-md font-bold">
           {data && `Hi, ${data.user?.name}. Email: ${data.user?.email}!`}
