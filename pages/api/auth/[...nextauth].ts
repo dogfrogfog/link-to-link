@@ -1,4 +1,4 @@
-import NextAuth from 'next-auth';
+import NextAuth, { Session } from 'next-auth';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import GithubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
@@ -16,6 +16,13 @@ export const authOptions = {
     }),
   ],
   adapter: PrismaAdapter(db),
-  debug: true,
+  callbacks: {
+    async session({ session, user }: any) {
+      session.user = user;
+
+      return session;
+    },
+  },
 };
+
 export default NextAuth(authOptions);

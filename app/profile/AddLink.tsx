@@ -16,7 +16,7 @@ export default function AddLink() {
   const submitForm = async (v: unknown) => {
     setIsFetching(true);
     try {
-      const a = await fetch('/api/contents/create', {
+      await fetch('/api/contents/create', {
         method: 'POST',
         body: JSON.stringify(v),
       });
@@ -95,13 +95,13 @@ function FormComponent({
           <div className="mb-4 flex">
             <label
               className="flex-none mr-4 text-gray-700 text-md font-bold"
-              htmlFor={'link'}
+              htmlFor={'url'}
             >
-              Link:
+              Url:
             </label>
             <Field
               className="flex-1 border rounded px-3 text-gray-700 leading-tight"
-              name="link"
+              name="url"
               component="input"
               type="text"
               placeholder="https://example.com/temafit"
